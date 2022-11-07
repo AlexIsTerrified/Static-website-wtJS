@@ -1,0 +1,26 @@
+body{margin:0;padding:0;width:100%;min-height:100vh;display:flex;justify-content:center;background:#f3f3f3;font-family: sans-serif;letter-spacing: .03rem;}
+
+.page{width:100%;max-width:640px;height:100%;display:flex;flex-direction:column;align-items:Center;overflow-x:hidden;padding:10px;margin-bottom:20px}
+
+.page .box{border:1px solid #0005;border-radius:9px;width:100%;overflow:hidden}
+.page form{width:800%;display:flex;align-self: self-start;transition:.3s}
+.page form section{width:12.5%;display:flex;flex-direction:column;padding:10px;box-sizing:border-box;height: fit-content;}
+.page #s1{transform:translateX(-12.5%)}
+.page #s2{transform:translateX(-25%)}
+.page #s3{transform:translateX(-37.5%)}
+.page #s4{transform:translateX(-50%)}
+.page #s5{transform:translateX(-62.5%)}
+.page #s6{transform:translateX(-75%)}
+.page #s7{transform:translateX(-87.5%)}
+.page form section b{padding:10px 0;font-size:.8rem}
+.page form section .input{display:flex;flex-direction:column;padding:10px;}
+.page form section .input label{padding:0 10px;font-size:.75rem;color:#000a}
+.page form section .input input{max-width:200px;padding:5px;border:1px solid #0004;outline:none;margin:0}
+.page form section .input span{font-size:.75rem;color:#000a;display:flex}
+.page form section .input .error{color:#d32f2f}
+.page form section .radio span{padding:10px}
+.page form section .end{display:flex;justify-content:space-between;padding:10px 0}
+.page form section .end button{padding:10px 20px;border:1px solid #0004;border-radius:5px;background:#0001;cursor:pointer;transition:.3s}
+.page form section .end button:hover{scale:1.05}
+.page form section .end button:disabled{background:#90caf9;scale:1;cursor:initial}
+.page form section .end .nextButton{background:#1976d2;color:#fff}
