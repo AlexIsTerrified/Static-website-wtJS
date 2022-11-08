@@ -10,8 +10,6 @@ body{margin:0;padding:0;width:100%;min-height:100vh;display:flex;justify-content
 .page #s3{transform:translateX(-37.5%)}
 .page #s4{transform:translateX(-50%)}
 .page #s5{transform:translateX(-62.5%)}
-.page #s6{transform:translateX(-75%)}
-.page #s7{transform:translateX(-87.5%)}
 .page form section b{padding:10px 0;font-size:.8rem}
 .page form section .input{display:flex;flex-direction:column;padding:10px;}
 .page form section .input label{padding:0 10px;font-size:.75rem;color:#000a}
@@ -24,3 +22,4 @@ body{margin:0;padding:0;width:100%;min-height:100vh;display:flex;justify-content
 .page form section .end button:hover{scale:1.05}
 .page form section .end button:disabled{background:#90caf9;scale:1;cursor:initial}
 .page form section .end .nextButton{background:#1976d2;color:#fff}
+.page form section .end .submit{background:#1976d2;color:#fff}

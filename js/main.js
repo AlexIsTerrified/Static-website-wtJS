@@ -57,7 +57,7 @@ nextButton.forEach((button,b)=>{
 					}
 					let newDisabled = true
 					disabled.forEach((d,i)=>{
-						newDisabled = !d && !disabled[i-1] ? false : true
+							newDisabled = !d && !disabled[i-1] ? false : true
 					})
 					button.disabled = newDisabled
 				})
@@ -115,11 +115,14 @@ nextButton.forEach((button,b)=>{
 
 backButton.forEach((button,b)=>{
 	button.addEventListener('click',(e)=>{
-		if(b<backButton.length-1){
 			e.preventDefault()
 			form.id = 's'+(b)
 			const section = document.querySelector('.s'+(b))
 			form.style.height = section.offsetHeight+"px"
-		}
 	})
+})
+
+const lastbutton = document.getElementById('lastNext')
+lastbutton.addEventListener('click',()=>{
+
 })
