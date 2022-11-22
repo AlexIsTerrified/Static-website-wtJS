@@ -22,4 +22,12 @@ body{margin:0;padding:0;width:100%;min-height:100vh;display:flex;justify-content
 .page form section .end button:hover{scale:1.05}
 .page form section .end button:disabled{background:#90caf9;scale:1;cursor:initial}
 .page form section .end .nextButton{background:#1976d2;color:#fff}
-.page form section .end .submit{background:#1976d2;color:#fff}
+.page form section .end .lastNext{background:#1976d2;color:#fff}
+
+.page .summary{border:1px solid #0005;border-radius:9px;width:100%;overflow:hidden;padding:10px;box-sizing:border-box}
+.page .summary .section{padding:10px;border-bottom: 1px solid #0004;color:#000a}
+.page .summary .appointment{padding:10px}
+.page .summary h3{padding-top:10px}
+.page .summary b{font-size:.75rem}
+.page .summary p{max-width: 200px;border-bottom: 1px solid #0004;color: #000;background: #0092;
+    padding: 4px;font-size: .8rem;border-radius: 3px;}

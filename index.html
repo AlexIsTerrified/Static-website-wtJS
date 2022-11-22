@@ -10,7 +10,7 @@
 		<b>Motor Vehicles and Road Traffic Act, Chap. 48:50 Regulation 18</b>
 		<h1>APPLICATION FOR DRIVING<br/>PERMIT(S)/ENDORSEMENT(S)</h1>
 		<div class="box">
-			<form>
+			<form action="process.php" method="post">
 				<section class="s0">
 					<h3>Type of Permit(s)/Endorsement(s) Applied for</h3>
 					<b>Transaction*</b>
@@ -111,15 +111,15 @@
 					</div>
 					<div class="input text required">
 						<span>First Name*</span>
-						<input type="text" name="first-name"></input>
+						<input type="text" name="firstname"></input>
 					</div>
 					<div class="input">
 						<span>Middle Name</span>
-						<input type="text" name="middle-name"></input>
+						<input type="text" name="middlename"></input>
 					</div>
 					<div class="input">
 						<span>Madien Name (if any)</span>
-						<input type="text" name="madien-name"></input>
+						<input type="text" name="madienname"></input>
 					</div>
 					<b>Sex*</b>
 					<div class="input radio required">
@@ -230,15 +230,15 @@
 					<b>If Yes to the Questions State The Number And Date Issued Below</b>
 					<div class="input text">
 						<span>Number</span>
-						<input type="number"></input>
+						<input type="number" name="issuenumber"></input>
 					</div>
 					<div class="input text">
 						<span>Date</span>
-						<input type="date"></input>
+						<input type="date" name="issuedate"></input>
 					</div>
 					<div class="input text">
 						<span>Class Of Vehicle Authorized to Drive</span>
-						<input type="text"></input>
+						<input type="text" name="issueclass"></input>
 					</div>
 					<div class="end">
 						<button class="backButton">Back</button>
@@ -261,7 +261,7 @@
 					</div>
 					<div class="input text">
 						<span>Give Particulars of Any Endorsement(s) On Any Driving Permit/Licence Which You Held or Now Hold</span>
-						<textarea type="text"></textarea>
+						<textarea type="text" name="particulars"></textarea>
 					</div>
 					<b>Have You at Any Time Been Disqualified From Obtaining A Driving Permit?</b>
 					<div class="input radio required">
@@ -278,24 +278,24 @@
 					</div>
 					<div class="input text">
 					<span>If Yes Give Particulars</span>
-						<textarea type="text"></textarea>
+						<textarea type="text" name="disparticulars"></textarea>
 					</div>
 					<b>Are Physique,Hearing and Bodily and Mental Fitness Such as to Qualify You For The Issue of A Driving Permit?</b>
 					<div class="input radio required">
 						<span>
-						<input type="radio" name="Quapermit" value="Yes">
+						<input type="radio" name="quapermit" value="Yes">
 							<label>Yes</label>
 						</input>
 						</span>
 						<span>
-						<input type="radio" name="Quapermit"  value="No">
+						<input type="radio" name="quapermit"  value="No">
 							<label>No<label>
 						</input>
 						</span>
 					</div>
 					<div class="end">
 						<button class="backButton">Back</button>
-						<button class="nextButton" id="lastNext" type="submit">Submit</button>
+						<button class="lastNext" type="submit">Submit</button>
 					</div>
 				</section>
 			</form>

@@ -115,14 +115,11 @@ nextButton.forEach((button,b)=>{
 
 backButton.forEach((button,b)=>{
 	button.addEventListener('click',(e)=>{
-			if(b<backButton.length-1)e.preventDefault()
-			form.id = 's'+(b)
-			const section = document.querySelector('.s'+(b))
-			form.style.height = section.offsetHeight+"px"
+			if(b<backButton.length){
+				e.preventDefault()
+				form.id = 's'+(b)
+				const section = document.querySelector('.s'+(b))
+				form.style.height = section.offsetHeight+"px"
+			}
 	})
-})
-
-const lastbutton = document.getElementById('lastNext')
-lastbutton.addEventListener('click',()=>{
-
 })
